@@ -1,51 +1,26 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+/*
+  Find two Google Fonts:
+    * The first should be for headings
+    * The second should be for general text
 
-* {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-body {
-  max-width:320px;
-  margin:0 auto;
-}
-h1 {
-  font-size:52px;
-  font-weight:300;
-  margin:10px 0 20px 0;
-}
-input {
-  border:none;
-  width:100%;
-  font-size:22px;
-  background:#eee;
-  padding:8px 20px;
-}
-ul {
-  margin:20px 0;
-  padding:0;
-}
-ul li {
-  width:100%;
-  list-style-type: none;
-  background:#ccc;
-  color:#666;
-  margin-bottom:1px;
-  padding:8px 20px;
-  font-size:22px;
-}
+  Find a FLAT UI color:
+    * http://www.flatuicolorpicker.com/
+    * Be sure to make sure the font color contrasts with the color
+      * If the color is darker the font should be white
+      * If the color is lighter it should be black
+    * MAKE THIS YOUR body background color!
 
-.completed {
-  text-decoration:line-through;
-  color:#eee;
-}
+  Going forward
+    * Style all elements as some rgba() that's
+      some shade of gray with some alpha transparency
+    * The goal here is to make elements darker or lighter
+      but have the color for entire page never change
 
-#add_todo{
-  margin-left:10px;
-  background:#FF6666;
-  color:#662929;
-  font-size:16px;
-  border:none;
-  padding:8px 20px;
-  letter-spacing:2px;
-  box-shadow:0 2px 0 0 #662929;
-  border-radius:4px;
-}
+  Add Style for a .form class
+  Add Style for a generic .container class
+    * Containers should be centered
+    * Should have a width of 80%
+
+  Add a style for a .todo
+
+*/

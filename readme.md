@@ -2,6 +2,9 @@
 
 Create a todo list app using HTML, JS, and the CSS file `todos.css` in this directory.  Your app should function like the following GIF:
 
+
+Look at the `todos.css` for instructions on styling.
+
 ### Part One
 
 * A user can hit enter in the text input to add a new todo

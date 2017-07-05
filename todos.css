@@ -1,7 +1,4 @@
 /*
-  Find two Google Fonts:
-    * The first should be for headings
-    * The second should be for general text
 
   Find a FLAT UI color:
     * http://www.flatuicolorpicker.com/
@@ -24,3 +21,41 @@
   Add a style for a .todo
 
 */
+
+body {
+  background-color: hsla(26, 45%, 85%, 1);
+}
+
+#app-header {
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+}
+
+#app {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#inputs {
+  text-align: center;
+  margin auto;
+}
+
+.todo-container{
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  border: 2px solid black;
+  width: 100%;
+  background-color: rgba(201, 201, 201, .2);
+
+}
+
+.completed {
+  background-color: rgba(201, 201, 201, .8);
+}
+
+.checkbox {
+  margin: 1% 5%;
+  vertical-align: middle;
+}
+

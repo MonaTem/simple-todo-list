@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Raleway');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.todo-form,
+.todo-form input,
+.todo-form textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 5px;
+}
+
+
+.todo-form {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.todo-form .control {
+  position: relative;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.todo-form #title {
+  font-size: 2em;
+}
+
+.todo-form #description {
+  font-size: 1em;
+}
+
+.todo-form .btn {
+  width: 100%;
+  border: 0;
+  font-size: 1.5em;
+}

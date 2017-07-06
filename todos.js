@@ -14,9 +14,17 @@ function handleAddTodo(event) {
     description: form.querySelector("#description").value
   });
 
+  listenToCheckBox(newTodo.querySelector(".checkbox"), newTodo);
+
   todoList.appendChild(newTodo);
 }
 
+
+function listenToCheckBox(box, newTodo) {
+  box.addEventListener("click", function () {
+    newTodo.classList.toggle("done")
+  })
+}
 
 function buildTodo(params) {
   var newLi       = document.createElement("li");
@@ -26,8 +34,18 @@ function buildTodo(params) {
   title.innerHTML       = params.title;
   description.innerHTML = params.description;
 
+  newLi.appendChild(createCheckBox())
   newLi.appendChild(title);
   newLi.appendChild(description);
 
   return newLi;
+}
+
+
+function createCheckBox() {
+  var removeBtn  = document.createElement("input");
+  removeBtn.type = "checkbox";
+  removeBtn.classList.add("checkbox")
+
+  return removeBtn;
 }

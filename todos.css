@@ -50,3 +50,8 @@ body {
   border: 0;
   font-size: 1.5em;
 }
+
+.done {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}

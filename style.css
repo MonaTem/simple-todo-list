@@ -1,4 +1,4 @@
-body {
+    body {
     background-color: rgba(108, 122, 137, .95);
 }
 
@@ -14,8 +14,7 @@ h1 {
 }
 
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     display: block;
     width: 80%;
     text-align: center;
@@ -38,3 +37,21 @@ button {
     margin: 10px;
     font-size: 20px;
 }
+
+#checkboxTD:checked+#labelCB:after {
+    content: "✔︎";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: white;
+}
+
+#labelCB {
+    position: relative;
+}
+
+#checkboxTD {
+    display: none;

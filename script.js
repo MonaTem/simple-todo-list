@@ -1,47 +1,47 @@
-var myform = document.querySelector('#todoForm');
-var todoDiv = document.querySelector('#task')
-var todos = document.querySelector('#todos')
+function App() {
+  var myform = document.querySelector('#todoForm');
+  var input = document.querySelector('#task')
+  var todos = document.querySelector('#todos')
 
+  myform.addEventListener('submit', function (event) {
+      event.preventDefault();
 
+      todos.prepend(createTodo(
+        createCheck(),
+        createLabel(input.value)
+      ));
+  })
 
-myform.addEventListener('submit', function (event) {
-    event.preventDefault();
-    //    set user input to 'NewTask'
-    var newTask = todoDiv.value
-    //    create containing div
-    var newDiv = document.createElement('div');
-    //    create input (for checkbox)
-    var newCheck = document.createElement('input')
-    //    create checkbox label
-    var newLabel = document.createElement('label')
+  function createTodo(newCheck, newLabel) {
+    var el = document.createElement('div');
 
+    el.appendChild(newCheck)
+    el.appendChild(newLabel)
 
+    return el;
+  }
+
+  function createCheck() {
+    var el = document.createElement('input')
     //    assign input as type: checkbox
-    newCheck.type = 'checkbox'
+    el.type = 'checkbox'
     //    set checkbox id
-    newCheck.id = 'checkboxTD'
+    el.id = 'checkboxTD'
 
-    //    set label text as user input
-    newLabel.innerHTML = newTask
+    return el;
+  }
+
+  function createLabel(content) {
+    var el = document.createElement('label')
+
+    el.innerHTML = content
     //    set label class for buttonClicker
-    newLabel.id = 'labelCB'
+    el.id = 'labelCB'
     //    connect label to checkbox
-    newLabel.setAttribute('for', 'checkboxTD')
+    el.setAttribute('for', 'checkboxTD')
 
+    return el;
+  }
+}
 
-    //    append checkbox and label to div
-    newDiv.appendChild(newCheck)    
-    newDiv.appendChild(newLabel)
-    //    prepend div to existing div 'todos'
-    todos.prepend(newDiv);
-})
-
-
-
-
-
-
-//     TODO: 
-//      edit field
-//      removed text after entry
-//      strikethrough
+App();
